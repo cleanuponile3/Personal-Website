@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albetros Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #000; color: #fff; }
+        .text-gold { color: #ffbd39; }
+        .bg-gold { background-color: #ffbd39; }
+        .border-gold { border-color: #ffbd39; }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed top-0 w-full z-50 bg-black/90 py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter uppercase">Albetros</div>
+            <ul class="hidden md:flex space-x-12 text-sm font-medium uppercase tracking-widest">
+                <li><a href="#" class="text-gold">Home</a></li>
+                <li><a href="#projects" class="hover:text-gold transition">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col md:flex-row items-center justify-center container mx-auto px-6 pt-20">
+        <div class="md:w-1/2 space-y-4">
+            <span class="text-gold tracking-[0.2em] text-xs font-bold uppercase">Hello!</span>
+            <h1 class="text-6xl md:text-8xl font-bold leading-tight">I'm <span class="text-gold">Albetros Njaaga</span></h1>
+            <p class="text-2xl font-light tracking-wide text-gray-300">Web Developer</p>
+            <div class="flex space-x-4 pt-8">
+                <button class="bg-gold text-black px-10 py-4 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white transition duration-300">Hire Me</button>
+
+            </div>
+        </div>
+        <div class="md:w-1/2 mt-12 md:mt-0 flex justify-end">
+            <img src="alboSite.jpg" alt="alboSite" class="w-full max-w-lg grayscale hover:grayscale-0 transition duration-700">
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-[#050505]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 relative">
+                <h2 class="text-4xl font-bold z-10 relative">My Projects</h2>
+                <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl md:text-9xl font-bold opacity-[0.03] pointer-events-none uppercase">Projects</span>
+                <p class="text-gray-500 mt-4 max-w-xl mx-auto">A showcase of recent web applications and design work.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-lg bg-zinc-900 aspect-video">
+                    <img src="making-a-budget-tracking-finances.jpg" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition duration-300 opacity-0 group-hover:opacity-100">
+                        <h3 class="text-xl font-bold">E-Commerce Platform</h3>
+                        <p class="text-gold text-sm uppercase tracking-tighter">Web Development</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-lg bg-zinc-900 aspect-video">
+                    <img src="House.jpg" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition duration-300 opacity-0 group-hover:opacity-100">
+                        <h3 class="text-xl font-bold">Agency Landing Page</h3>
+                        <p class="text-gold text-sm uppercase tracking-tighter">UI/UX Design</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-lg bg-zinc-900 aspect-video">
+                    <img src="https://via.placeholder.com/600x400/222/555" alt="Project" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 opacity-60 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 translate-y-4 group-hover:translate-y-0 transition duration-300 opacity-0 group-hover:opacity-100">
+                        <h3 class="text-xl font-bold">Mobile App API</h3>
+                        <p class="text-gold text-sm uppercase tracking-tighter">Backend</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-600 text-sm">
+        <p>&copy; 2024 Shehan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
